@@ -1,0 +1,11 @@
+class Main {
+    public static void main(String[] args) {
+        String x="Hi its me sathish";
+        
+         System.out.println(x.startsWith("Hi its me sathish"));//True
+         System.out.println(x.startsWith("He"));//False
+        }
+       
+       
+    
+}
