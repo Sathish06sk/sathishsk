@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[]args){
+        Scanner data=new Scanner(System.in);
+        System.out.println("String:");
+        String s=data.nextLine();
+        char so=s.charAt(0);
+        System.out.println("charAt():"+so);
+        int s1=s.codePointAt(0);
+        System.out.println("codePointAt():"+s1);
+        int s2=s.codePointBefore(1);
+        System.out.println("codePointBefore():"+s2);
+       
+    }
+}
