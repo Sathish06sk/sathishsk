@@ -1,0 +1,88 @@
+import java.util.Scanner;
+
+class Fam {
+    static Scanner data = new Scanner(System.in);
+
+    void sound() {
+        System.out.println("Family detail");
+    }
+}
+
+class Grand father extends Fam {
+    String gfName;
+
+    @Override
+    void sound() {
+        System.out.print("Grand father name: ");
+        gfName = data.nextLine();
+        System.out.println("Grand father name is: " + gfName);
+    }
+}
+
+class Grand mother extends Fam {
+    String gmName;
+
+    @Override
+    void sound() {
+        System.out.print("Grand mother name: ");
+        gmName = data.nextLine();
+        System.out.println("Grand mother name is: " + gmName);
+    }
+}
+
+class Father extends Fam {
+    String fName;
+
+    @Override
+    void sound() {
+        System.out.print("Father name: ");
+        fName = data.nextLine();
+        System.out.println("Father name is: " + fName);
+    }
+}
+
+class Mother extends Fam {
+    String mName;
+
+    @Override
+    void sound() {
+        System.out.print("Mother name: ");
+        mName = data.nextLine();
+        System.out.println("Mother name is: " + mName);
+    }
+}
+
+class Myn extends Fam {
+    String mynName;
+
+    @Override
+    void sound() {
+        System.out.print("MY name: ");
+        mynName = data.nextLine();
+        System.out.println("MY name is: " + mynName);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Fam a;
+
+        a = new Fam();
+        a.sound();
+
+        a = new Grand father();
+        a.sound();
+
+        a = new Grand mother();
+        a.sound();
+
+        a = new Father();
+        a.sound();
+
+        a = new Mother();
+        a.sound();
+
+        a = new Myn();
+        a.sound();
+    }
+}
