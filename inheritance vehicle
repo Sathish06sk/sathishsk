@@ -1,0 +1,23 @@
+class Vehicle {
+    Vehicle() {
+        System.out.println("Vehicle");
+    }
+}
+
+class FourWheeler extends Vehicle {
+    FourWheeler() {
+        System.out.println("FourWheeler");
+    }
+}
+
+class Car extends FourWheeler {
+    Car() {
+        System.out.println("Car");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car obj = new Car();
+    }
+}
